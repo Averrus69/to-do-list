@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import { list } from "postcss";
 import { useState } from "react";
 
 export default function Home() {
@@ -43,7 +41,7 @@ export default function Home() {
     setListName("");
   };
 
-  const listCheckHandler = (index: any) => {
+  const listCheckHandler = (index: number) => {
     const newTodoList = [...toDoList];
     newTodoList[index].isDone = !newTodoList[index].isDone;
     setTodoList(newTodoList);
